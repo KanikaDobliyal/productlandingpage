@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Product Landing Page</title>
+
+    <!-- External css file -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header container for logo and navbar -->
+    <header id="header">
+      <!-- Container for image logo -->
+      <div class="logo">
+        <img
+          id="header-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0uu_IAkQlQWXl1CnZrPUPNscvlkgQmDcUxQ&usqp=CAU"
+          alt="logo"
+        />
+      </div>
+      <!-- Navbar -->
+      <nav id="nav-bar">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#flavours">Flavours</a>
+        <a class="nav-link" href="#advertisement">Advertisement</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <!-- Section 1 for home image and form -->
+    <section id="home">
+      <div class="home-col">
+        <div class="nescafe-img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijAij9J4-8THvV0AY0DrKp-eTB81cxOSGO7ZxNUFMWmnUh3oCuMs0c2Y14Fg2rYLzomY&usqp=CAU"
+            alt="nescafe"
+          />
+        </div>
+      </div>
+
+      <div class="home-col">
+        <form>
+          <h1>Good Morning World !</h1>
+          <p>
+            We love making new connections, friendships, & relationships & we
+            might be a little biased, but we think the best ones start with
+            coffee!
+          </p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          /><br />
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Section 2 for flavours -->
+    <section id="flavours">
+      <h1>Try some different ways of Nescafe</h1>
+      <div id="coffee">
+        <div class="column">
+          <img
+            src="https://www.nescafe.com/sites/default/files/styles/rlp_desktop/public/AU_en_Nescafe_Recipes_Images_Iced-Latte-Macchiato_KeyVisual_468by468px_210806_1_0.jpg?itok=5g1Rd8Ma"
+            alt="iced latte"
+            class="flavours-img"
+          />
+          <h3>Iced Latte Macchiato</h3>
+          <p>
+            Iconic, ice-cold and refreshing. We’ll show you how you can easily
+            make this with NESCAFÉ.
+          </p>
+        </div>
+
+        <div class="column">
+          <img
+            src="https://www.nescafe.com/sites/default/files/styles/rlp_desktop/public/dalgona-coffee-recipe-grid-view-desktop.jpg?itok=z64HogCd"
+            alt="dalgona"
+            class="flavours-img"
+          />
+          <h3>Dalgona Coffee</h3>
+          <p>
+            Treat yourself with this delicious twist on iced coffee! Our dalgona
+            coffee recipe is easily made in 3 quick steps, then you can sit
+            back, relax and enjoy.
+          </p>
+        </div>
+
+        <div class="column">
+          <img
+            src="https://www.nescafe.com/sites/default/files/styles/rlp_desktop/public/CreamyCaramel_NoJar_Recipe_Grid%20View%20Desktop%20468x468.jpg?itok=CtjeW-rr"
+            alt="decaf latte"
+            class="flavours-img"
+          />
+          <h3>Creamy Caramel Decaf Latte</h3>
+          <p>
+            Sometimes you want coffee, sometimes you want something sweet.
+            Here’s a solution for when you want both.
+          </p>
+        </div>
+
+        <div class="column">
+          <img
+            src="https://www.nescafe.com/sites/default/files/styles/rlp_desktop/public/AU_en_Nescafe_Recipes_Images_Smoked-Cinnamon_KeyVisual_468by468px_210806_1.jpg?itok=Xwfb5eYL"
+            alt="smoked cinnamon"
+            class="flavours-img"
+          />
+          <h3>Smoked Cinnamon Coffee</h3>
+          <p>Open up the possibilities of your day with this smokey recipe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 for youtube video advertisement -->
+    <section id="advertisement">
+      <h1>Advertisement video</h1>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/8YSQduld0vY?si=TjYQ4VuRfb81caTn"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        id="nescafe-ad"
+      ></iframe>
+    </section>
+
+    <!-- Container for table -->
+    <div id="pricing">
+      <table>
+        <!-- Caption of the table -->
+        <caption>
+          Product Price
+        </caption>
+        <!-- Heading of the columns -->
+        <thead>
+          <tr>
+            <th>Flavour</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <!-- Data in columns -->
+        <tbody>
+          <tr>
+            <td>Nescafe Gold Blend Decaf Rich & Smooth Coffee</td>
+            <td>₹680 /100 g</td>
+          </tr>
+
+          <tr>
+            <td>Nescafe Gold Decaff Rich Aroma Coffee</td>
+            <td>₹668 /100 g</td>
+          </tr>
+
+          <tr>
+            <td>Nescafe Sunrise Coffee</td>
+            <td>₹367.52 /100 g</td>
+          </tr>
+
+          <tr>
+            <td>Nescafe Gold Origins Sumatra Coffee</td>
+            <td>₹735 /95 g</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <h4>Privacy Terms Contact</h4>
+      <p>
+        <a href="https://www.nestle.com/info/copyright"
+          >Copyright Nestlé 2020</a
+        >
+      </p>
+    </footer>
+
+    <!-- End of the body -->
+  </body>
+</html>

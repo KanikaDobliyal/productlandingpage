@@ -1,0 +1,291 @@
+/* Universal selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Body of the page */
+body {
+  margin: 0 auto;
+  background-color: rgb(224, 212, 165)
+}
+
+/* Css for all h1 tag */
+h1 {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: rgb(4, 61, 29);
+}
+
+/* Header container for logo and navbar  */
+#header {
+  background-color: rgb(240, 239, 230);
+  position: fixed;
+  width: 100%;
+  overflow: auto;
+  z-index: 1;
+}
+
+/* Container for nescafe logo */
+.logo {
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+/* Nescafe logo image */
+#header-img {
+  width: 150px;
+}
+
+/* Navbar */
+#nav-bar {
+  float: right;
+  margin: 20px 30px;
+}
+
+/* Navbar links */
+.nav-link {
+  margin: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+/* hover on navbar links */
+.nav-link:hover {
+  color: rgb(94, 45, 26);
+}
+
+/* Section 1 container with id home */
+#home {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 35% 55%;
+  justify-content: center;
+  overflow: auto;
+  /* background: radial-gradient(rgb(146, 167, 30), rgb(95, 140, 143), rgb(59, 116, 73)); */
+}
+
+/* Cloumns for content inside home container */
+.home-col {
+  text-align: center;
+  overflow: auto;
+}
+
+/* Nescafe image's container inside home container */
+.nescafe-img {
+  overflow: auto;
+  position: relative;
+  top: 50px;
+}
+
+/* form inside home container */
+form {
+  padding: 30px;
+  overflow: auto;
+}
+
+/* Email field inside form container */
+#email {
+  padding: 10px;
+  width: 300px;
+}
+/* Submit button inside form */
+#submit {
+  margin: 20px;
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* hover on submit */
+#submit:hover {
+  background-color: yellow;
+}
+
+/* Section 2 container with id flavours */
+#flavours {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* div container for .column class with id #coffee */
+#coffee {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+/* .column class for grid */
+.column {
+  text-align: center;
+  overflow: auto;
+}
+
+/* h3 Heading inside columns  */
+.column > h3 {
+  font-size: 22px;
+  color: rgb(3, 70, 42);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+/* images for .column class */
+.flavours-img {
+  width: 150px;
+}
+
+/* Section 3 container with id #advertisement */
+#advertisement {
+  text-align: center;
+  padding: 20px;
+  overflow: auto;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+/* iframe with id #nescafe-ad, which is a youtube video */
+#nescafe-ad {
+  border: 2px solid yellow;
+}
+
+/* div container with id #pricing for table */
+#pricing {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+/* table tag */
+table {
+  width: 100%;
+}
+/* caption for the table */
+caption {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px;
+}
+/* General sibling combinator of table tag, column's heading and data*/
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+/* column's heading and data */
+th,
+td {
+  text-align: center;
+  padding: 10px;
+}
+/* column's heading */
+th {
+  background-color: rgb(87, 11, 11);
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* column's data */
+td {
+  background-color: rgb(223, 203, 203);
+}
+
+/* footer */
+footer {
+  background-color: rgb(184, 179, 179);
+  text-align: right;
+  padding: 10px 20px;
+  margin: 10px 30px;
+}
+/* footer's heading */
+footer > h4 {
+  word-spacing: 20px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Media querie with screen (min-with: 200px) and (max-width : 768px) */
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  #header {
+    position: sticky;
+    top: 0;
+  }
+  .logo {
+    float: left;
+    text-align: center;
+    position: relative;
+    left: 40%;
+  }
+  #nav-bar {
+    float: left;
+    clear: left;
+    position: relative;
+    left: 35%;
+    margin: 0;
+  }
+  .nav-link {
+    font-size: 20px;
+    display: block;
+    align-content: center;
+  }
+  #home {
+    display: block;
+    padding-top: 0;
+  }
+  .nescafe-img {
+    display: none;
+  }
+  #coffee {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: space-around;
+  }
+  .column {
+    margin: 10px auto;
+  }
+  #nescafe-ad {
+    width: 300px;
+    height: 250px;
+  }
+  footer {
+    margin: 0 auto;
+  }
+}
+
+/* Media queries with (min-with: 769px) and (max-width : 1046px) */
+@media screen and (min-width: 769px) and (max-width: 1046px) {
+  #coffee {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+  }
+  .column {
+    margin: 10px auto;
+  }
+}
+
+/* Media queries with (min-width: 780px) */
+@media screen and (min-width: 780px) {
+  table {
+    width: 70%;
+  }
+}
